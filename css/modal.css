@@ -1,0 +1,70 @@
+@charset 'utf-8';
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+
+}
+a{
+    color: white;
+    font-weight: bold;
+
+}
+
+#abrir{
+
+    z-index: 2;
+}
+
+#cortina{
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    transition: 1s;
+}
+
+#fechar{
+
+    float: right;
+    margin: 20px;
+}
+
+#modal{
+
+    width: 55%;
+    height: 54%;
+    background-color: white;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: -500px;
+    border: solid 2px #fff;
+    transition: 1.2s;
+    text-align: center;
+    color: white;
+}
+h1{
+    font-size: 2vh;
+    padding-bottom:5%;
+}
+#modal form{
+
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+
+
+
+
+

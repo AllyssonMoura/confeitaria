@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color:#fff;
+  font-family: 'Dancing Script', cursive;
+  align-items: center;
+  font-size: 70px;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image:url(../img/img1.jpg);
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.box {
+  width: 300px;
+  border-radius: 50px;
+  height: 300px;
+  margin-right: 75%;
+}
+
+button {
+  background-color: #FF4040;
+  font-size:15px;
+  width: 50%;
+  height: 15%;
+  margin-top: 20%;
+  padding:6px 6px;
+  border:1px solid #EE3B3B;
+  border-radius: 5px;
+  text-decoration: none;
+  color:#fff;
+  margin-left: 25%;
+  display: inline-block;
+  text-align:center;
+  align-items: center;
+  text-decoration:none;
+  font-family: calibri;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 3vh;
+}

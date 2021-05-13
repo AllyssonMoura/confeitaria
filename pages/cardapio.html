@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Sweet Dessert - Cardápio</title>
+        <link rel="stylesheet" href="../css/modal.css" type="text/css">
+        <link rel="stylesheet" type="text/css" href="../css/cardapio.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <!-- Cardápio feito com grid, (feito a mão) pesquisamos um video que ensinava grid simples. link: https://youtu.be/u5llIESEPqA -->
+
+      <body id="corpo">
+      <div style="" id="main">
+        <div class="card">
+          <figure class="imagem">
+            <img src="../img/teste1.png">
+          </figure>
+          <div class="content">
+
+            <div>
+              <h3>Bolo Trufado Branco com Praliné de Nozes</h3>
+              <p>Feito com pão de ló branco Reforpan, o bolo trará a suavidade da trufa branca de Chocolate Branco Salware, com o Praliné de nozes o sabor fica marcante, com a acobertura de Ganache Branco Arabescos de Cobertura Salware Gold, o sabor fica unico.</p>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="card">
+          <figure class="imagem">
+            <img src="../img/teste2.jpg">
+          </figure>
+          <div class="content">
+            <div>
+              <h3>Torta Mousse Trufado de Maracujá</h3>
+              <p>Feito com pão de ló amanteigado, a torta acompanhado da trufa de chocolate branco belga traz o sabor azedo e doce do maracujá, com a cobertura de cream chesse, suco do Maracujá Doce e mel, trazendo a crocancia das sementes e suavidade do mel.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <figure class="imagem">
+            <img src="../img/teste3.jpg">
+          </figure>
+          <div class="content">
+            <div>
+               <h3>Bolo de Laranja com Cobertura de Chocolate e Hortelã</h3>
+              <p>Feito com pão de ló Genoise, o bolo carrega o sabor da Laranja Seleta, com cobertura de chocolate amargo e aroma de hortelã, com  pedaços de laranja na decoração o  sabor fica exotico e unico.</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <figure class="imagem">
+            <img src="../img/teste4.jpg">
+          </figure>
+          <div class="content">
+            <div>
+              <h3>Torta Mousse de Limão</h3>
+              <p>Feito com pão de ló de Gênova, a Torta Mousse de Limão tem o sabor suave do limão, com recheio de Ganache de Limão o sabor fica cremoso e leve, com cobertura de chantilly com cream cheese fica suave, e calda de mel de laranjeira e raspas de limão trazendo o doce e azedo</p>
+            </div>
+          </div>
+        </div>
+         <button><a href="#" onclick="abrirCalculadora()" id="abrir">Tabela com os valores</a></a></button>
+         <button><a href="../pages/cardapio2.html">Próximo Cardápio</a></a></button>
+        </div>
+        <div id="cortina">
+            <div id="modal">
+               <a href="#" id="fechar" style="color: black" onclick="fecharCalculadora()">X</a>
+                <form action="." method="get">
+                    <label>Digite o valor do bolo que você quer comprar:
+                        <input class="field" type="number" id="v1" name="n_v1">
+                    </label>
+                    <label>Digite o valor do bolo que você quer comprar:
+                        <input class="field" type="number" id="v2" name="n_v2">
+                    </label>
+
+                    <label>Lista de Bolos e preços:
+                        <select style="border-radius:5px; border-color:#fada3e" class="field" id="operacao">
+                            <option value="+">Torta Mousse de Limão - R$ 45,00</option>
+                            <option value="+">Bolo de Laranja com Cobertura de Chocolate e Hortelã - R$ 45,00</option>
+                            <option value="+">Bolo de Chocolate Belga Premium - R$ 50,00</option>
+                            <option value="+">Torta Mousse Trufado de Maracujá - R$ 60,00</option>
+                            <option value="+">Torta de cereja com ganache de macarron - R$ 70,00</option>
+                            <option value="+">Bolo de Amora com Guraná - R$ 45,00</option>
+                            <option value="+">Torta de Morango com Cream Cheese - R$ 58,00</option>
+                            <option value="+">Bolo de Framboesa com Chocolate - R$ 48,00</option>
+                            <option value="+">Torta de Nozes e Caramelo - R$ 58,00</option>
+                        </select>
+                    </label>
+                    <input class="btn" type="button" value="Calcular" id="btn" onclick="calcular(),validar()">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </form>
+                <h1 id="resultado"></h1>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="../js/funcoes.js"></script>
+    </body>
+</html>
